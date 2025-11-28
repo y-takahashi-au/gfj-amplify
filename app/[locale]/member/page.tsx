@@ -1,7 +1,4 @@
 import { type NextPageIntlayer } from "next-intlayer";
-import { getLocaleName, Locales, type LocalesValues } from "intlayer";
-import Image from "next/image";
-import { useLocaleSearch } from "@/components/LocaleSwitcher/UseLocaleSearch";
 
 const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_URL as string;
 

@@ -17,10 +17,7 @@ const GfjNavContent: FC = () => {
           <a href="/member">{content.member.value}</a>
         </li>
         <li className="flex-1 flex items-center justify-center">
-          <a href="#">{content.event.value}</a>
-        </li>
-        <li className="flex-1 flex items-center justify-center">
-          <a href="#">{content.blog.value}</a>
+          <a href="/event">{content.event.value}</a>
         </li>
       </ul>
     </nav>

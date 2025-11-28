@@ -1,14 +1,7 @@
 import Image from "next/image";
-import { IntlayerClientProvider, type NextPageIntlayer } from "next-intlayer";
+import { type NextPageIntlayer } from "next-intlayer";
 import { IntlayerServerProvider, useIntlayer } from "next-intlayer/server";
-import type {
-  FC,
-  JSXElementConstructor,
-  Key,
-  ReactElement,
-  ReactNode,
-  ReactPortal,
-} from "react";
+import type { FC, Key } from "react";
 import { AboutUs } from "@/components/AboutUs/AboutUs";
 
 const PageContent: FC = () => {
@@ -50,12 +43,10 @@ const Page: NextPageIntlayer = async ({ params }) => {
 
   return (
     <IntlayerServerProvider locale={locale}>
-      <IntlayerClientProvider locale={locale}>
-        <main>
-          <PageContent />
-          <AboutUs />
-        </main>
-      </IntlayerClientProvider>
+      <main>
+        <PageContent />
+        <AboutUs />
+      </main>
     </IntlayerServerProvider>
   );
 };
