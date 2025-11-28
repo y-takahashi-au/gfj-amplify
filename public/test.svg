@@ -1,0 +1,52 @@
+<!-- rainbow-wave-horizontal.svg -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1440 320"
+  preserveAspectRatio="none"
+>
+  <defs>
+    <!-- 横方向の虹色グラデーション -->
+    <linearGradient id="rainbowHorizontal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#050816"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- 背景用ダークグラデ -->
+    <linearGradient id="bgDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#ff4b5c"/>
+      <stop offset="16%"  stop-color="#ff9a3c"/>
+      <stop offset="32%"  stop-color="#ffd93c"/>
+      <stop offset="48%"  stop-color="#4cd964"/>
+      <stop offset="64%"  stop-color="#34c5ff"/>
+      <stop offset="80%"  stop-color="#4b7bff"/>
+      <stop offset="100%" stop-color="#9b5cff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1440" height="320" fill="url(#bgDark)" />
+
+  <!-- 上の波 -->
+  <path
+    fill="url(#rainbowHorizontal)"
+    d="
+      M0,40
+      C180,20 360,0 540,20
+      C720,40 900,80 1080,60
+      C1260,40 1350,20 1440,30
+      L1440,0 L0,0 Z
+    "
+  />
+
+  <!-- 下の波 -->
+  <path
+    fill="url(#rainbowHorizontal)"
+    d="
+      M0,280
+      C200,300 400,340 600,300
+      C800,260 1000,240 1200,260
+      C1350,280 1400,300 1440,310
+      L1440,320 L0,320 Z
+    "
+  />
+</svg>

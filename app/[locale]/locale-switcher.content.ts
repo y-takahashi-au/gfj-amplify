@@ -5,23 +5,19 @@ const localeSwitcherContent = {
 	content: {
 		title: t({
 			en: "Language",
-			fr: "Langue",
-			es: "Idioma",
+			ja: undefined
 		}),
 		selectLanguage: t({
 			en: "Select Language",
-			fr: "Sélectionner la langue",
-			es: "Seleccionar idioma",
+			ja: undefined
 		}),
 		currentLanguage: t({
 			en: "Current language",
-			fr: "Langue actuelle",
-			es: "Idioma actual",
+			ja: undefined
 		}),
 		changeLanguage: t({
 			en: "Change language",
-			fr: "Changer de langue",
-			es: "Cambiar idioma",
+			ja: undefined
 		}),
 	},
 } satisfies Dictionary;
